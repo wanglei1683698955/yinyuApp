@@ -1,0 +1,44 @@
+{
+  "id": "2572967",
+  "name": "XiaoXi",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4139624",
+      "name": "返回 左箭头 向左 上一步 线性",
+      "font_class": "fanhuizuojiantouxiangzuoshangyibuxianxing",
+      "unicode": "e911",
+      "unicode_decimal": 59665
+    },
+    {
+      "icon_id": "7310411",
+      "name": "向右",
+      "font_class": "xiangyou",
+      "unicode": "e74a",
+      "unicode_decimal": 59210
+    },
+    {
+      "icon_id": "10577001",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "12723069",
+      "name": "icon／60+好友申请",
+      "font_class": "iconhaoyoushenqing",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "18341060",
+      "name": "图 片",
+      "font_class": "tupian",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

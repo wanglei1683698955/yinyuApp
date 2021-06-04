@@ -1,0 +1,15 @@
+module.exports={
+    devServer:{
+        open:true,
+        proxy:{
+            '/xxxapi':{
+                target:'http://api.qingyunke.com',
+                changeOrigin:true,
+                ws:true,
+                pathRewrite:{
+                    '^/xxxapi':''
+                }
+            }
+        }
+    }
+}
