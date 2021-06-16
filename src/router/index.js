@@ -329,17 +329,17 @@ const router = new VueRouter({
   routes
 })
 
-// router.beforeEach((to, from, next) => {
-//   if (to.path === '/startpage' || to.path === '/login' || to.path === '/loginverify') {
-//     next();
-//   } else {
-//     let token = localStorage.getItem('YinYuToken');
-//     if (!token) {
-//       next('/login');
-//     } else {
-//       next();
-//     }
-//   }
-// });
+router.beforeEach((to, from, next) => {
+  if (to.path === '/startpage' || to.path === '/login' || to.path === '/loginverify') {
+    next();
+  } else {
+    let token = localStorage.getItem('YinYuToken');
+    if (!token) {
+      next('/login');
+    } else {
+      next();
+    }
+  }
+});
 
 export default router

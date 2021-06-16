@@ -32,7 +32,7 @@ export default {
             if(index === 0){
                 this.$router.push({name:'haoyou'})
             }else if(index === 1){
-                this.$router.push({name:'guanzhu'})
+                this.$router.push({name:'guanzhut'})
             }else if(index === 2){
                 this.$router.push({name:'fensi'})
             }
