@@ -63,7 +63,7 @@ export default {
       this.made("right","/images/XiaoXi/TouXiang/pph_66.jpeg",this.text)
       this.amend()
       //发送数据
-      XiaoXiLiaoTianSend("xxxapi/api.php",{key:"free",appid:"0",msg:this.text}).then(ok=>{
+      XiaoXiLiaoTianSend("capi/api.php",{key:"free",appid:"0",msg:this.text}).then(ok=>{
         this.otherText(ok.data.content)
       })
       this.text = ""

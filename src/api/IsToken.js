@@ -3,7 +3,7 @@ export function XiaoXiLiaoTianSend(url,params){
     return new Promise((reslove,reject)=>{
         service.request({
             url,
-            mounted:"get",
+            method:"get",
             params
         }).then(ok=>{
             reslove(ok)

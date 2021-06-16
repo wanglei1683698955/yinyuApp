@@ -2,12 +2,12 @@ module.exports={
     devServer:{
         open:true,
         proxy:{
-            '/xxxapi':{
+            '/capi':{
                 target:'http://api.qingyunke.com',
                 changeOrigin:true,
                 ws:true,
                 pathRewrite:{
-                    '^/xxxapi':''
+                    '^/capi':''
                 }
             },
             '/hdapi':{
@@ -16,6 +16,22 @@ module.exports={
                 ws:true,
                 pathRewrite:{
                     '^/hdapi':''
+                }
+            },
+            '/xxxapi': {
+                target: 'http://yinyuyu.cn.utools.club',
+                changeOrigin: true,
+                ws: true,
+                pathRewrite: {
+                    '^/xxxapi': ''
+                }
+            },
+            '/api': {
+                target: 'http://yinyuyu.cn.utools.club',
+                changeOrigin: true,
+                ws: true,
+                pathRewrite: {
+                    '^/api': ''
                 }
             }
         }

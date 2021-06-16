@@ -1,0 +1,72 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6322077",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "7985174",
+      "name": "左箭头",
+      "font_class": "forward",
+      "unicode": "e508",
+      "unicode_decimal": 58632
+    },
+    {
+      "icon_id": "10602971",
+      "name": "超值推荐角标",
+      "font_class": "chaozhituijianjiaobiao",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "10895946",
+      "name": "创建房间",
+      "font_class": "chuangjianfangjian",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "10896156",
+      "name": "创建房间",
+      "font_class": "chuangjianfangjian1",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "18207593",
+      "name": "皇冠 冠军@2x",
+      "font_class": "huangguanguanjun2x",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "18859229",
+      "name": "快捷创建房间",
+      "font_class": "kuaijiechuangjianfangjian",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "21020012",
+      "name": "页码 翻页-右",
+      "font_class": "yemafanye-you",
+      "unicode": "e70a",
+      "unicode_decimal": 59146
+    },
+    {
+      "icon_id": "21776270",
+      "name": "页码 翻页-左",
+      "font_class": "yemafanye-zuo",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    }
+  ]
+}
