@@ -9,6 +9,14 @@ module.exports={
                 pathRewrite:{
                     '^/xxxapi':''
                 }
+            },
+            '/hdapi':{
+                target:'http://yinyuyu.cn.utools.club',
+                changeOrigin:true,
+                ws:true,
+                pathRewrite:{
+                    '^/hdapi':''
+                }
             }
         }
     }

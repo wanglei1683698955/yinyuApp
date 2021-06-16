@@ -1,9 +1,9 @@
 <template>
-  <div id="LoginVerify">
+  <div id="telChange">
     <span class="iconfont icon-forward" @click="backBut"></span>
     <h1>输入验证码</h1>
-    <h2>{{tp}}<span  @click="backBut">点击修改</span></h2>
-    <div id="LoginYZ">
+    <h2>{{tp}}</h2>
+    <div id="LoginYZ2">
       <!-- 密码输入框 -->
       <van-password-input
         :value="value"
@@ -24,12 +24,12 @@
     </div>
     <button
       v-if="buttonShowFun"
-      class="LoginVerifyBut1"
-      @click="loginVerifyNext"
+      class="telChangeBut1"
+      @click="telChangeNext"
     >
-      登录
+      更换
     </button>
-    <button v-else class="LoginVerifyBut2">登录</button>
+    <button v-else class="telChangeBut2">更换</button>
   </div>
 </template>
 
@@ -75,7 +75,7 @@ export default {
       this.Intval()
   },
   methods: {
-      loginVerifyNext(){
+      telChangeNext(){
         
         SendVir("/hdapi/users/login",{tel:this.$route.query.pho,num:this.value}).then((ok)=>{
           console.log(ok)
@@ -84,6 +84,7 @@ export default {
           this.$store.commit("userChange",ok.data.data)
           this.tp = "验证通过"
           this.$router.push({name:'paidui'})
+          console.log(this.$store.state.XiaoXim.user)
         }else {
           this.tp = "验证失败"
         }
@@ -103,14 +104,14 @@ export default {
           }, 1000);
       },
       backBut(){
-        this.$router.push({name:"login"})
+        this.$router.push({name:"setting"})
       }
   }
 };
 </script>
 
 <style scoped>
-#LoginVerify {
+#telChange {
   width: 100%;
   height: 100%;
   background: url("../../../public/images/PaiDui/Screenshot_musi.png");
@@ -119,14 +120,14 @@ export default {
   flex-direction: column;
   align-items: center;
 }
-#LoginVerify .icon-forward {
+#telChange .icon-forward {
   font-size: 0.22rem;
   color: #000;
   width: 100%;
   line-height: 0.32rem;
   padding-left: 0.1rem;
 }
-#LoginVerify h1 {
+#telChange h1 {
   width: 100%;
   font-size: 0.2rem;
   color: #000;
@@ -134,7 +135,7 @@ export default {
   padding-left: 0.1rem;
   margin-top: 0.74rem;
 }
-#LoginVerify h2 {
+#telChange h2 {
   width: 100%;
   color: #999;
   font-size: 0.14rem;
@@ -144,25 +145,25 @@ export default {
   padding-left: 0.1rem;
   padding-top: 0.14rem;
 }
-#LoginVerify h2 span {
+#telChange h2 span {
   color: rgb(53, 98, 245);
   margin-left: 0.1rem;
 }
-#LoginVerify #LoginYZ {
+#telChange #LoginYZ2 {
   width: 80%;
   margin-top: 0.64rem;
   display: flex;
   flex-direction: column;
 }
-#LoginVerify
-  #LoginYZ
+#telChange
+  #LoginYZ2
   .van-password-input
   .van-password-input__security
   .van-password-input__item {
   border: 1px solid #999;
   border-radius: 0.16rem;
 }
-#LoginVerify button {
+#telChange button {
   margin-top: 0.3rem;
   border: none;
   width: 78%;
@@ -172,12 +173,12 @@ export default {
   font-weight: 600;
   letter-spacing: 0.04rem;
 }
-#LoginVerify button.LoginVerifyBut1 {
+#telChange button.telChangeBut1 {
   background-color: #fecb34;
   border: 3px solid #222;
   color: #000;
 }
-#LoginVerify button.LoginVerifyBut2 {
+#telChange button.telChangeBut2 {
   background-color: #eee;
   border: 3px solid #ccc;
   color: #999;

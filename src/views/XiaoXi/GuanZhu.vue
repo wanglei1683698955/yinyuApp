@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import {DelUser} from "../../api/DelUser"
 import HaoYouList from '../../components/XiaoXi/HaoYouList.vue'
 export default {
   components: { HaoYouList },
@@ -104,6 +105,11 @@ export default {
       ],
     };
   },
+  mounted () {
+    DelUser("hdapi/guanzhu/all").then((ok)=>{
+      console.log(ok.data.data)
+    })
+  }
 }
 </script>
 

@@ -25,7 +25,7 @@ export default {
         return {
             buttonShow:false,
             checkBut:true,
-            phoneNum:"13644443333"
+            phoneNum:""
         }
     },
     computed: {
@@ -35,7 +35,7 @@ export default {
     },
     methods: {
         loginNext(){
-            this.$router.push({name:"loginverify"})
+            this.$router.push({name:"loginverify",query:{pho:this.phoneNum}})
         }
     }
 }

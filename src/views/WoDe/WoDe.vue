@@ -9,7 +9,7 @@
                   <p>868</p>
               </div>
 
-              <span>设置</span>
+              <span @click="setting">设置</span>
           </div>
 
           <div id="WoDe_individualResume">
@@ -60,6 +60,8 @@
                     <dt>45%</dt>
                     <dd>当前最高收益</dd>
                 </dl>
+                <b>充值</b>
+                <i>可提升</i>
               </div>
 
               <ul class="WoDeList">
@@ -125,6 +127,9 @@ export default {
             }else if(e.target.scrollTop === 0){
                 this.background_Top = true
             }
+        },
+        setting(){
+            this.$router.push({name:"setting"})
         }
     }
 }
@@ -314,6 +319,7 @@ export default {
       display: flex;
       justify-content: space-between;
       margin-top: 0.12rem;
+      position: relative;
   }
   #WoDe_options_asset dl{
       width: 32%;
@@ -336,6 +342,34 @@ export default {
       font-size: 0.12rem;
       font-weight: 400;
       color: #666;
+  }
+  #WoDe_options_asset b{
+      width: 0.42rem;
+      height: 0.26rem;
+      font-size: 0.12rem;
+      color: rgb(255, 255, 255);
+      border: 01px solid #000;
+      position: absolute;
+      left: 21%;
+      top: -16%;
+      background-color: #21cdcf;
+      border-radius: 0.08rem 0.08rem 0.08rem 0;
+      line-height: 0.26rem;
+      text-align: center;
+  }
+  #WoDe_options_asset i{
+      width: 0.42rem;
+      height: 0.26rem;
+      font-size: 0.12rem;
+      color: rgb(255, 255, 255);
+      border: 01px solid #000;
+      position: absolute;
+      left: 88%;
+      top: -16%;
+      background-color: #ff2120;
+      border-radius: 0.08rem 0.08rem 0.08rem 0;
+      line-height: 0.26rem;
+      text-align: center;
   }
   .WoDeList{
       width: 100%;

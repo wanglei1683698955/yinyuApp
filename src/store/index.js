@@ -13,5 +13,7 @@ export default new Vuex.Store({
   },
   modules: {
     XiaoXim
+  },
+  getters:{
   }
 })
